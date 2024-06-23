@@ -10,7 +10,7 @@ interface PersonalDetailsFormData {
 }
 
 interface PersonalDetailsFormProps {
-  onSubmit: SubmitHandler<PersonalDetailsFormData>;
+  onSubmit: (data: PersonalDetailsFormData) => void;
 }
 
 const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
@@ -24,6 +24,7 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
   const navigate = useNavigate();
 
   const onNextClick = (data: PersonalDetailsFormData) => {
+    onSubmit(data);
     localStorage.setItem("personalDetails", JSON.stringify(data));
     navigate("/service-info");
   };

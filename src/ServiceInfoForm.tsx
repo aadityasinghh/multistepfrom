@@ -15,7 +15,7 @@ interface ServiceInfoFormData {
 }
 
 interface ServiceInfoFormProps {
-  onSubmit: SubmitHandler<ServiceInfoFormData>;
+  onSubmit: (data: ServiceInfoFormData) => void;
 }
 
 const ServiceInfoForm: React.FC<ServiceInfoFormProps> = ({ onSubmit }) => {
@@ -28,7 +28,9 @@ const ServiceInfoForm: React.FC<ServiceInfoFormProps> = ({ onSubmit }) => {
   const navigate = useNavigate();
 
   const onNextClick = (data: ServiceInfoFormData) => {
+    onSubmit(data);
     localStorage.setItem("serviceInfo", JSON.stringify(data));
+
     navigate("/slot-booking");
   };
 

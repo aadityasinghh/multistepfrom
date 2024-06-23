@@ -15,7 +15,7 @@ interface SlotBookingFormData {
 }
 
 interface SlotBookingFormProps {
-  onSubmit: SubmitHandler<SlotBookingFormData>;
+  onSubmit: (data: SlotBookingFormData) => void;
 }
 
 const SlotBookingForm: React.FC<SlotBookingFormProps> = ({ onSubmit }) => {
@@ -28,6 +28,7 @@ const SlotBookingForm: React.FC<SlotBookingFormProps> = ({ onSubmit }) => {
   const navigate = useNavigate();
 
   const onNextClick = (data: SlotBookingFormData) => {
+    onSubmit(data);
     localStorage.setItem("slotBooking", JSON.stringify(data));
     navigate("/thank-you");
   };
