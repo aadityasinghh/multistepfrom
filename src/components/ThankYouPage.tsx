@@ -9,7 +9,7 @@ const ThankYouPage: React.FC = () => {
   const slotBooking = JSON.parse(localStorage.getItem("slotBooking") || "{}");
 
   return (
-    <div>
+    <div className="thankyou">
       <Typography variant="h4">Thank You, {personalDetails.name}!</Typography>
       <Typography>
         Your slot has been booked on {slotBooking.bookingDate} in the{" "}

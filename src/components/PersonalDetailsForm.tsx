@@ -2,6 +2,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { Button, TextField, Typography } from "@material-ui/core";
+import "../App.css";
 
 interface PersonalDetailsFormData {
   name: string;
