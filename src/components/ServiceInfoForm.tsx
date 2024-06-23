@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+
 import {
   Button,
   MenuItem,
@@ -35,7 +36,7 @@ const ServiceInfoForm: React.FC<ServiceInfoFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <div>
+    <div className="service">
       <Typography variant="h4" gutterBottom>
         Service Information
       </Typography>

@@ -1,0 +1,37 @@
+/* App.css */
+
+/* General form container styles */
+.formContainer {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TextField styles */
+.textField {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+/* Typography styles for form headers */
+.formHeader {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Error message styles */
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

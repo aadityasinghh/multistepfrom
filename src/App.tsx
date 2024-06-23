@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PersonalDetailsForm from "./PersonalDetailsForm";
-import ServiceInfoForm from "./ServiceInfoForm";
-import SlotBookingForm from "./SlotBookingForm";
-import ThankYouPage from "./ThankYouPage";
+import PersonalDetailsForm from "./components/PersonalDetailsForm";
+import ServiceInfoForm from "./components/ServiceInfoForm";
+import SlotBookingForm from "./components/SlotBookingForm";
+import ThankYouPage from "./components/ThankYouPage";
 
 const App: React.FC = () => {
   const handlePersonalDetailsSubmit = (data: any) => {

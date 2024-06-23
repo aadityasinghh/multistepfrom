@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+
 import {
   Button,
   MenuItem,
@@ -34,7 +35,7 @@ const SlotBookingForm: React.FC<SlotBookingFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <div>
+    <div className="slot">
       <Typography variant="h4" gutterBottom>
         Slot Booking
       </Typography>

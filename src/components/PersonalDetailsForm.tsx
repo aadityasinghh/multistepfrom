@@ -30,7 +30,7 @@ const PersonalDetailsForm: React.FC<PersonalDetailsFormProps> = ({
   };
 
   return (
-    <div>
+    <div className="personal">
       <Typography variant="h4" gutterBottom>
         Personal Details
       </Typography>
